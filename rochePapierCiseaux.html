@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Roche-Papier-Ciseaux</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="boxForm">
+        <div class="formulaire">
+            <form>
+                <label for="nom">Nom </label></br>
+                    <input type="text" id="idNom" name="nom"></br>
+
+                <label for="peau">Peau</label>
+                <div class="peau">
+                    <input type="radio" id="jaune" name="choix" value="0" checked="checked">👋 
+                    <input type="radio" id="blanc" name="choix" value="1">👋🏻
+                    <input type="radio" id="brunPale" name="choix" value="2">👋🏽
+                    <input type="radio" id="brun" name="choix" value="3">👋🏿
+                </div>
+                
+                <label for="choix">Choix</label></br>
+                    <select name="choix" id="idChoix">
+                        <option>🥔</option>
+                        <option>📄</option>
+                        <option>✂️</option>
+                    </select></br>  
+                <button class="btn">Jouer</button>
+            </form>   
+        </div>
+    </div>
+    <div id="game">
+        <div class="player"></div>
+        <div class="cpu"></div>
+        <button class="btnRejouer">Rejouer</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
