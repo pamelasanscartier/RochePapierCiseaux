@@ -40,7 +40,7 @@ form{
     justify-content: space-between;
     margin-bottom: 10px;
 }
-#idChoix{
+.choixOption{
     height: 40px;
     border-radius: 20px;
     width: 100%;
@@ -65,5 +65,8 @@ select{
     display: none;
 }
 #game{
+    display: none;
+}
+.btnRejouer{
     display: none;
 }

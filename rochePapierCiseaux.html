@@ -9,31 +9,37 @@
 <body>
     <div class="boxForm">
         <div class="formulaire">
-            <form>
+            <form name="formulaireJeu">
                 <label for="nom">Nom </label></br>
                     <input type="text" id="idNom" name="nom"></br>
 
                 <label for="peau">Peau</label>
                 <div class="peau">
-                    <input type="radio" id="jaune" name="choix" value="0" checked="checked">👋 
-                    <input type="radio" id="blanc" name="choix" value="1">👋🏻
-                    <input type="radio" id="brunPale" name="choix" value="2">👋🏽
-                    <input type="radio" id="brun" name="choix" value="3">👋🏿
+                    <input type="radio" id="jaune" name="choixPeau" value="0" checked="checked">👋 
+                    <input type="radio" id="blanc" name="choixPeau" value="1">👋🏻
+                    <input type="radio" id="brunPale" name="choixPeau" value="2">👋🏽
+                    <input type="radio" id="brun" name="choixPeau" value="3">👋🏿
                 </div>
                 
-                <label for="choix">Choix</label></br>
-                    <select name="choix" id="idChoix">
-                        <option>🥔</option>
-                        <option>📄</option>
-                        <option>✂️</option>
+                <label for="choixOption">Choix</label></br>
+                    <select name="choixOption" class="choixOption">
+                        <option value = "1">🥔</option>
+                        <option value = "2">📄</option>
+                        <option value = "3">✂️</option>
                     </select></br>  
                 <button class="btn">Jouer</button>
             </form>   
         </div>
     </div>
-    <div id="game">
-        <div class="player"></div>
-        <div class="cpu"></div>
+    <div id="partie">
+        <div class="joueur">
+            <div class="nomJoueur"></div>
+            <div class="choixJoueur"></div>
+        </div>
+        <div class="cpu">
+            <div class="nomCpu"></div>
+            <div class="choixCpu"></div>
+        </div>
         <button class="btnRejouer">Rejouer</button>
     </div>
     <script src="script.js"></script>

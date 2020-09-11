@@ -1,37 +1,48 @@
+//Game
+
+const commencer = document.querySelector('.btn');
+commencer.addEventListener('click', function(e){
+    e.preventDefault();
+    document.querySelector('.boxForm').classList.add('none');
+    document.body.style.backgroundColor = 'white';
+    const game = new Game();
+    }); 
+
 class Game{
-    constructor(){
-        this.listeChoix = [
+    constructor(){ 
+        this.listeChoixMain = [
             ['✊', '✋', '✌️'],
             ['✊🏻', '✋🏻', '✌🏻'],
             ['✊🏽', '✋🏽', '✌🏽'],
             ['✊🏿', '✋🏿', '✌🏿']   
         ];
-        this.jouer = document.querySelector('.btn')
-        this.jouer.addEventListener('click', () => this.start())
         
-        this.rejouer = document.querySelector('.btnRejouer')
-        this.rejouer.addEventListener('click', () => this.replay())
-        
-    };
-
-    start(){
-        const jouer = document.querySelector('.btn');
-        jouer.addEventListener('click', function(e){
-            
-            e.preventDefault();
-            console.log('chat')
-            document.querySelector('.boxForm').classList.add('none');
-            document.body.style.backgroundColor = 'white';
-        });
+        this.afficherNomJoueur();
+        this.afficherChoixJoueur();
+        //this.choixCPU();
+       // this.resultatPartie();
     }
 
-    replay(){
+    afficherNomJoueur(){
+        const nomJoueur = document.formulaireJeu.nom.value;
+        const afficherNom = document.querySelector('.nomJoueur');
+        afficherNom.innerHTML = `<span>${nomJoueur}</span>`;
+    }
 
-    };
-    //Joueur
+    afficherChoixJoueur(){
+        //Choix entre roche, papier ou ciseaux
+        const choixOption = document.querySelector('.choixOption');
+        const indexChoixOption = choixOption.selectedIndex;
+        
+        //Choix de la couleur de peau
+        const choixCouleur = document.querySelector('[name = choixPeau]:checked').value;
 
-    //CPU
-
+        //Résultat du joueur
+        const actionJoueur = this.listeChoixMain[choixCouleur][indexChoixOption];
+        
+        //Afficher résultat joueur
+        const afficherActionJoueur = document.querySelector('.choixJoueur');
+        afficherActionJoueur.innerHTML = `<span>${actionJoueur}</span>`;
+    }
+    
 };
-
-const game = new Game()
