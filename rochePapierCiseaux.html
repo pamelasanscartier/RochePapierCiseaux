@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Roche-Papier-Ciseaux</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 </head>
 
 <body>
@@ -31,16 +32,21 @@
             </form>   
         </div>
     </div>
-    <div id="partie">
+    <div class="partie">
         <div class="joueur">
             <div class="nomJoueur"></div>
             <div class="choixJoueur"></div>
         </div>
         <div class="cpu">
-            <div class="nomCpu"></div>
+            <div class="nomCpu"> CPU</div>
             <div class="choixCpu"></div>
         </div>
-        <button class="btnRejouer">Rejouer</button>
+        <div class="wrapResultat">
+            <div class="resultat">
+                <div class="score"></div>
+            <button class="btnRejouer" name="btnRejouer">Rejouer</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

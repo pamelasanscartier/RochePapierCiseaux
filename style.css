@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 .formulaire{
@@ -67,6 +68,80 @@ select{
 #game{
     display: none;
 }
+.partie{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.joueur{
+    width: 50%;
+    background-color: purple;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.nomJoueur{
+   color: white; 
+   font-size: 3em;
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+}
+.cpu{
+    width: 50%;
+    background-color: pink;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+.nomCpu{
+    color: white;
+    font-size: 3em;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.choixJoueur{
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-150%);
+}
+.choixCpu{
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-150%);
+}
+.resultat{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
 .btnRejouer{
-    display: none;
+    background-color: white;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    transform: translateX(30%);
+}
+.score{
+    
+    margin-bottom: 20px;
+    font-size: 4em;
+    color: white;
+}
+.wrapResultat{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    width: 100%;
+    bottom: 20px;
 }
