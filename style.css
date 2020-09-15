@@ -4,6 +4,7 @@ html{
     width: 100%;
     display: flex;
 }
+
 body{
     background-color: #272635;
     display: flex;
@@ -19,8 +20,8 @@ body{
     width: 280px;
     border-radius: 20px;
     padding: 20px;
-
 }
+
 form{
     width:100%;
 }
@@ -35,12 +36,14 @@ form{
     margin-bottom: 10px;
     padding-left: 10px;
 }
+
 .peau{
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 10px;
 }
+
 .choixOption{
     height: 40px;
     border-radius: 20px;
@@ -62,12 +65,15 @@ select{
     width: 100%;
     border: none;
 }
+
 .none{
     display: none;
 }
+
 #game{
     display: none;
 }
+
 .partie{
     display: flex;
     height: 100%;
@@ -75,6 +81,7 @@ select{
     justify-content: center;
     align-items: center;
 }
+
 .joueur{
     width: 50%;
     background-color: purple;
@@ -83,6 +90,7 @@ select{
     justify-content: space-between;
     flex-direction: column;
 }
+
 .nomJoueur{
    color: white; 
    font-size: 3em;
@@ -90,6 +98,7 @@ select{
    display: flex;
    justify-content: center;
 }
+
 .cpu{
     width: 50%;
     background-color: pink;
@@ -99,6 +108,7 @@ select{
     align-content: center;
     flex-direction: column;
 }
+
 .nomCpu{
     color: white;
     font-size: 3em;
@@ -106,24 +116,27 @@ select{
     display: flex;
     justify-content: center;
 }
+
 .choixJoueur{
     font-size: 10em;
     display: flex;
     justify-content: center;
     transform: translateY(-150%);
 }
+
 .choixCpu{
     font-size: 10em;
     display: flex;
     justify-content: center;
     transform: translateY(-150%);
 }
+
 .resultat{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
 }
+
 .btnRejouer{
     background-color: white;
     height: 40px;
@@ -132,12 +145,13 @@ select{
     border: none;
     transform: translateX(30%);
 }
-.score{
-    
+
+.score{ 
     margin-bottom: 20px;
     font-size: 4em;
     color: white;
 }
+
 .wrapResultat{
     display: flex;
     justify-content: center;

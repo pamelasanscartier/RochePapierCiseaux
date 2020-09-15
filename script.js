@@ -11,7 +11,7 @@ commencer.addEventListener('click', function(e){
     document.querySelector('.boxForm').classList.add('none');
     document.querySelector('.partie').style.display = 'flex';
     document.querySelector('.btnRejouer').classList.remove('none');
-    document.body.style.backgroundColor = 'white';   
+    document.body.style.backgroundColor = 'white'; 
     const game = new Game();
 }); 
 
